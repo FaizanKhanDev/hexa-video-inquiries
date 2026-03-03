@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: inline-block;
+            text-align: left;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-top: 20px;
+        }
+
+        .indication-table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .indication-table td {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .indication-table td:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        .indication-table td:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Engine Overhaul Report</h1>
+        <ul>
+            <li>Customer: _______</li>
+            <li>Work Order: _______</li>
+            <li>Location: _______</li>
+            <li>LSD: _______</li>
+            <li>Unit #: _______</li>
+            <li>Unit Hours: _______</li>
+            <li>Date: _______</li>
+            <li>Customer Contact: _______</li>
+            <li>Engine Make: _______</li>
+            <li>Engine Model: _______</li>
+            <li>Engine Serial #: _______</li>
+            <li>Engine Arrangement: _______</li>
+            <li>Mechanic #1: _______</li>
+            <li>Mechanic #2: _______</li>
+        </ul>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 50px; height: 300vh;">
+            <h1 class="text-center">Engine Assembly Report </h1>
+            <p style="text-align: center;">Engine Block</p>
+            <ul style="display: flex; justify-content: space-between; list-style-type: none;">
+                <li>
+                    <label for="exchange"> Exchange</label>
+                    <input value="" checked type="checkbox">
+                </li>
+                <li style="margin-left: 50px;">
+                    <label for="new"> New</label>
+                    <input id="new" type="checkbox">
+                </li>
+                <li style="margin-left: 50px;">
+                    <label for="customer_refurbished"> Customer Refurbished </label>
+                    <input type="checkbox" id="customer_refurbished">
+                </li>
+            </ul>
+
+            <!-- Line 1 -->
+            <ul style="display: flex; justify-content: space-between; list-style-type: none; align-items: center;">
+                <li style="margin-top: 50px;">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="yes">
+                    <label for="no" style="margin-left: 40px;">No</label>
+                    <input type="checkbox" id="no">
+                </li>
+                <li style="margin: 0; margin-left: 50px; margin-top: 100px;">
+                    Line Bore Performed (Crankshaft and Camshaft)
+                    <br>
+                    <br>
+                    <br>
+                    Company: --------------------------
+                </li>
+            </ul>
+            <!-- Line 2 -->
+            <ul style="display: flex; justify-content: space-around; list-style-type: none; align-items: center;">
+                <li style="margin-top: 50px;">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="yes">
+                    <label for="no" style="margin-left: 40px;">No</label>
+                    <input type="checkbox" id="no">
+                </li>
+                <li style="margin: 0; margin-left: 0; margin-top: 100px;">
+                    Mag Checked for Cracks
+                    <br>
+                    <br>
+                    <br>
+                    Company: --------------------------
+                </li>
+            </ul>
+            <!-- Line 3 -->
+            <ul style="display: flex; justify-content: space-between; list-style-type: none; align-items: center;">
+                <li style="margin-top: 50px;">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="yes">
+                    <label for="no" style="margin-left: 40px;">No</label>
+                    <input type="checkbox" id="no">
+                </li>
+                <li style="margin: 0; margin-left: 50px; margin-top: 100px;">
+                    Liner Fits Repaired? (Upper (U) and Lower (L))
+                    <br>
+                    <br>
+                    <br>
+                    Company: --------------------------
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <p style="text-align: center;">Indicate Which Ones</p>
+            <table class="indication-table">
+                <tr>
+                    <td>#1</td>
+                    <td>X</td>
+                    <td>#2</td>
+                    <td>X</td>
+                    <td>#3</td>
+                    <td>X</td>
+                    <td>#4</td>
+                    <td>X</td>
+                    <td>#5</td>
+                    <td>X</td>
+                    <td>#6</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>#7</td>
+                    <td>X</td>
+                    <td>#8</td>
+                    <td>X</td>
+                    <td>#9</td>
+                    <td>X</td>
+                    <td>#10</td>
+                    <td>X</td>
+                    <td>#11</td>
+                    <td>X</td>
+                    <td>#12</td>
+                    <td>X</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+            <h3 class="text-center">Engine Crankshaft </h3>
+            <ul style="display: flex; justify-content: space-between; list-style-type: none;">
+                <li>
+                    <label for="exchange"> Exchange</label>
+                    <input id="exchange" type="checkbox">
+                </li>
+                <li style="margin-left: 50px;">
+                    <label for="new"> New</label>
+                    <input id="new" type="checkbox">
+                </li>
+                <li style="margin-left: 50px;">
+                    <label for="customer_refurbished"> Customer Refurbished </label>
+                    <input type="checkbox" id="customer_refurbished">
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <p class="text-center">Plasti-Gauge readings on main bearings:</p>
+            <table class="indication-table">
+                <tbody>
+                    <tr>
+                        <td>Specification</td>
+                        <td>0.0042” - 0.0081”</td>
+                    </tr>
+                    <tr>
+                        <td>Actual</td>
+                        <td>0.006”</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <p style="text-align: center;">Indicate Which Ones</p>
+            <table class="indication-table">
+                <tr>
+                    <td>#1</td>
+                    <td>X</td>
+                    <td>#2</td>
+                    <td>X</td>
+                    <td>#3</td>
+                    <td>X</td>
+                    <td>#4</td>
+                    <td>X</td>
+                    <td>#5</td>
+                    <td>X</td>
+                    <td>#6</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>#7</td>
+                    <td>X</td>
+                    <td>#8</td>
+                    <td>X</td>
+                    <td>#9</td>
+                    <td>X</td>
+                    <td>#10</td>
+                    <td>X</td>
+                    <td>#11</td>
+                    <td>X</td>
+                    <td>#12</td>
+                    <td>X</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <table class="indication-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">End Play</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Specification</td>
+                        <td>0.0042” - 0.0081”</td>
+                    </tr>
+                    <tr>
+                        <td>Actual</td>
+                        <td>0.006”</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
